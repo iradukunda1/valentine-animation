@@ -1,0 +1,61 @@
+/**
+* get random number.
+* @param {number} min - min number.
+* @param {number} max - max number.
+*/
+
+random(min,max)
+  return floor(math(0, 'random') * (max - min + 1) + min)
+
+body{
+  font-family: sans-serif;
+  background: #000;
+  font-size: 67.5%;
+  color: deeppink;
+  }
+#c{
+  z-index: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  }
+h1{
+  z-index: 2;
+  position: fixed;
+  font-size: 2.4rem;
+  top: 5%;
+  left: 5%;
+  line-height: 3.2rem;
+  }
+h2{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  text-align: right;
+  font-size: 1rem;
+  opacity: 0;
+}
+span{
+  position: absolute;
+  opacity: 0;
+  }
+for i in (1..4)
+  .delay:nth-of-type({i})
+    animation: span-animation- + i 1s linear 1.6s + (i * 400)ms 1 normal forwards;
+    
+for i in(1..4)
+  @keyframes span-animation-{i}
+    0%
+      transform: translateY(20px);
+      opacity: 0;
+    100%
+      transform: translateY(0);
+      opacity: 1;
+      
+@media (min-width: 500px)
+  h1
+    font-size: 4rem;
+    line-height: 4.8rem;
